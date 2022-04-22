@@ -17,3 +17,5 @@ async def async_generator():
         await asyncio.sleep(1)
         import random
         yield random.uniform(0.0, 10.0)
+
+print(__import__("0-async_generator").async_generator.__doc__)
